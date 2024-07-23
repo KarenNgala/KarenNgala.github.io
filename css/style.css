@@ -1,0 +1,93 @@
+:root{
+    --primary: #000000;
+    --secondary: rgb(75 85 99);
+}
+
+@import url('https://fonts.googleapis.com/css2?family=Mako&display=swap');
+
+
+* {
+    margin: 0;
+    padding: 0;
+    font-family: 'Mako', sans-serif;
+}
+
+body {
+    line-height: 1.5;
+    background: #F1F2F3;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+}
+
+.flex_column_center {
+    display: flex;
+    flex-direction: column;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_row_center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.flex_no_wrap_row_center {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: nowrap;
+    justify-content: center;
+    align-items: center;
+}
+/* Logo, Title and Description Codes */
+
+.header_img {
+    padding-top: 10%;
+}
+
+.header_img img {
+    height: 140px;
+    width: 140px;
+    border-radius: 50%;
+    margin-bottom: 0.5em;
+}
+
+.header_text h1 {
+    color: var(--primary);
+    font-size: 50px;
+}
+
+.header_text h2 {
+    color: var(--secondary);
+    font-size: 1.25rem;
+}
+
+/* Social Media Icons Codes */
+
+.header_svg_list {
+    padding-top: 1em;
+}
+
+.header_svg_item {
+    width: 2.1em;
+    height: 2.1em;
+    cursor: pointer;
+}
+
+.header_svg_item:hover {
+    transform: scale(1.10);
+    transition: 0.10s ease;
+}
+
+.header_svg_item + .header_svg_item {
+    margin-left: 1em;
+}
+
+.header_svg_item svg {
+    fill: var(--primary);
+}
